@@ -1,0 +1,3 @@
+DROP DATABASE TestDB;
+CREATE DATABASE TestDB;
+GRANT ALL PRIVILEGES ON TestDB.* TO 'pankaj'@'localhost';
