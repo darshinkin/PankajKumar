@@ -1,5 +1,7 @@
 package com.journaldev.hibernate.model;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,6 +14,7 @@ import org.hibernate.annotations.Cascade;
 
 @Entity
 @Table(name = "EMPLOYEE")
+@Access(value = AccessType.FIELD)
 public class Employee {
 
 	@Id
